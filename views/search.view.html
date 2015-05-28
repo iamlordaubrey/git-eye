@@ -1,28 +1,44 @@
-<div class="col-lg-12 search-header">
+<div class="row">
+  <div class="col-lg-12 search-header">
 
-  <div class="col-lg-1">
-    <h2 class="logo"><span class="teal">Git</span>Eye</h2>
-  </div>
-  <div class="col-lg-11">
-    <form class="form-inline" ng-submit="search()" style="margin-top: 5px;" role="form">
-      <div class="col-lg-4">
-        <input type="text" style="width: 100%;" class="form-control" ng-model="query">
+    <div class="row">
+      <div class="col-lg-1 col-md-1">
+        <h2 class="logo"><a href="#/"><span class="teal">Git</span>Eye</a></h2>
       </div>
-      <button type="submit" class="btn btn-primary">
-        <span class="glyphicon glyphicon-search"></span>
-      </button>
-    </form>
+      <div class="col-lg-11 col-md-11">
+        <form class="form-inline" ng-submit="search()" style="margin-top: 5px;" role="form">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <input type="text" style="width: 100%;" class="form-control" ng-model="query">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <button type="submit" class="btn btn-primary">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
   </div>
-  
 </div>
 
 <div class="container">
-  <p style="margin-top: 10px;">About 0 results</p>
 
-  <div class="result-item">
-    <a id="repo-name" href="">the repo name</a><br>
-    <span id="repo-link" href="">http://github.com/username/path-to-repo.git</span><br>
-    <span id="repo-desc">This is the repo discription. Tells the user more about the repo</span>
+  <div class="row">
+    <div class="col-lg-12">
+      <p style="margin-top: 10px;">About {{metadata.count}} results</p>
+    </div> 
+  </div> 
+
+  <div class="row" ng-repeat="result in results">
+    <div class="result-item col-lg-6">
+      <a target="_blank" id="repo-name" href="{{result.html_url}}">{{result.name}}</a><br>
+      <span id="repo-link">{{result.html_url}}.git</span><br>
+      <span id="repo-desc">{{result.description}}</span>
+    </div>
+    <div class="col-lg-6"></div>
   </div>
 
 </div>
