@@ -15,7 +15,7 @@ app.controller('SearchCtrl', ['$scope', '$stateParams', '$location', 'GitSearche
   };
 
   var failed = function() {
-
+    
   };
 
   GitSearcher.get($scope.query, searched, failed);
