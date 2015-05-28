@@ -5,7 +5,6 @@ app.controller('SearchCtrl', ['$scope', '$stateParams', '$location', 'GitSearche
   if ($scope.query === '')
     $location.path('/');
 
-
   $scope.metadata = {};
   $scope.results = [];
 
@@ -15,7 +14,7 @@ app.controller('SearchCtrl', ['$scope', '$stateParams', '$location', 'GitSearche
   };
 
   var failed = function() {
-
+    
   };
 
   GitSearcher.get($scope.query, searched, failed);
