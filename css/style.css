@@ -15,10 +15,14 @@
   margin-left: 3%; 
 }
 
+#home-content {
+  margin-top: 70px;
+}
+
 h1.logo { 
   font-size: 64px; 
-  margin-top: 65px; 
-  color: maroon; 
+  margin: 65px 0 30px; 
+  color: maroon;
 }
 
 h2.logo { 
@@ -26,10 +30,10 @@ h2.logo {
   color: maroon;  
 }
 
-  h2.logo a {
-    text-decoration: none;
-    color: maroon;  
-  }
+h2.logo a {
+  text-decoration: none;
+  color: maroon;  
+}
 
 .teal { 
   color: teal; 
