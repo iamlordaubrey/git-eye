@@ -6,4 +6,4 @@ app.controller('HomeCtrl', ['$scope', '$state', '$location', function($scope, $s
       $location.path('search/' + $scope.query);
   };
 
-}])
+}]);
