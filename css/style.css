@@ -11,8 +11,20 @@
 }
 
 .big-width { 
-  width: 94%; 
-  margin-left: 3%; 
+  width: 40%; 
+  margin: auto; 
+}
+
+@media only screen and (max-width: 480px) {
+  .big-width { 
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .big-width { 
+    width: 90%;
+  }
 }
 
 #home-content {
