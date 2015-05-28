@@ -1,9 +1,9 @@
-app.controller('HomeCtrl', ['$scope', '$state', function($scope, $state){
+app.controller('HomeCtrl', ['$scope', '$state', '$location', function($scope, $state, $location){
   
   $scope.query = '';
   $scope.search = function() {
     if ($scope.query !== '')
-      $state.go('search', {query: $scope.query});
+      $location.path('search/' + $scope.query);
   };
 
 }])

@@ -2,5 +2,12 @@
 .top-margin { margin-top: 5px; }
 .small-text { font-size: 12px; }
 .big-width { width: 94%; margin-left: 3%; }
-.logo { font-size: 64px; margin-top: 65px; color: maroon; }
+h1.logo { font-size: 64px; margin-top: 65px; color: maroon; }
+h2.logo { margin-top: 5px; color: maroon;  }
 .teal { color: teal; }
+.full-width { width: 100%; }
+.search-header { border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-top: 10px; }
+
+div.result-item { margin-top: 25px; }
+div.result-item a#repo-name { font-size: 24px; }
+div.result-item span#repo-link { font-size: 13px; color: green; }
