@@ -1,6 +1,9 @@
-app.controller('SearchCtrl', ['$scope', '$stateParams', function($scope, $stateParams){
+app.controller('SearchCtrl', ['$scope', '$stateParams', '$location', function($scope, $stateParams, $location){
   
   $scope.query = $stateParams.query;
-  $scope.q = '';
+  $scope.search = function() {
+    if ($scope.query !== '')
+      $location.path('search/' + $scope.query);
+  };
 
 }])

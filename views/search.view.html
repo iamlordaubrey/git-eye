@@ -1,3 +1,28 @@
-<div>
+<div class="col-lg-12 search-header">
+
+  <div class="col-lg-1">
+    <h2 class="logo"><span class="teal">Git</span>Eye</h2>
+  </div>
+  <div class="col-lg-11">
+    <form class="form-inline" ng-submit="search()" style="margin-top: 5px;" role="form">
+      <div class="col-lg-4">
+        <input type="text" style="width: 100%;" class="form-control" ng-model="query">
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </form>
+  </div>
   
+</div>
+
+<div class="container">
+  <p style="margin-top: 10px;">About 0 results</p>
+
+  <div class="result-item">
+    <a id="repo-name" href="">the repo name</a><br>
+    <span id="repo-link" href="">http://github.com/username/path-to-repo.git</span><br>
+    <span id="repo-desc">This is the repo discription. Tells the user more about the repo</span>
+  </div>
+
 </div>
