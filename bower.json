@@ -1,0 +1,14 @@
+{
+  "name": "Git Eye",
+  "version": "1.0.0",
+  "authors": [
+    "Developer Without Borders <toni.edward@outlook.com>"
+  ],
+  "description": "Github search engine",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.4"
+  }
+}
