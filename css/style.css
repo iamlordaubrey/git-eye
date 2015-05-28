@@ -11,6 +11,7 @@
 }
 
 .big-width { 
+<<<<<<< HEAD
   width: 40%; 
   margin: auto; 
 }
@@ -25,6 +26,10 @@
   .big-width { 
     width: 90%;
   }
+=======
+  width: 94%; 
+  margin-left: 3%; 
+>>>>>>> bfb16e2d7cb189037c60d4cf36c9551bef1e755d
 }
 
 #home-content {
